@@ -8,6 +8,9 @@
         <meta property="og:title" content="윤해수 - 프로필 링크" />
         <meta property="og:description" content="헬스하는 주니어 개발자" />
         <meta property="og:image" content="profile.jpg" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
         <title>윤해수 - 프로필 링크</title>
         <style>
             @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
@@ -33,16 +36,17 @@
                 border-radius : 100%;
                 border : 2px solid white;
 
-                background-image : url('profile.jpg');
                 background-position : center;
                 background-size : cover;
             }
-            .name {
+            .name > a {
                 color : white;
                 font-size : 20px;
                 
                 margin-top : 15px;
                 margin-bottom : 5px;
+
+                text-decoration : none;
             }
             .introduce {
                 color : white;
@@ -57,7 +61,7 @@
 
                 background-color : white;
                 color : black;
-                text-decoration: none;
+                text-decoration : none;
 
                 border-radius : 10px;
 
@@ -77,14 +81,17 @@
         </style>
     </head>
     <body>
+        
         <div class="main">
-            <div class="profile"></div>
-            <h1 class="name">윤해수</h1>
+            <div>
+                <a href="profile.jpg" data-lightbox="example-set"><img class="profile" src="profile.jpg" alt="이미지를 불러올 수 없습니다."></a>
+            </div>
+            <h1 class="name"><a href="myprofile.html">윤해수</a></h1>
             <p class="introduce">헬스하는 주니어 개발자</p>
             <a target="_blank" href="https://www.instagram.com/haesu.tag/">Instagram</a>
             <a target="_blank" href="https://www.notion.so/younplayground">개인포트폴리오</a>
             <a target="_blank" href="https://sus-playground.tistory.com//">개발놀이터</a>
             <a target="_self" href="">고민 중...</a>
-        </div>
+            </div>
     </body>
 </html>
